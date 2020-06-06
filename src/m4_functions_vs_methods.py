@@ -260,7 +260,6 @@ def try_methods_and_functions():
     martha.draw_circle(30)
     martha.draw_square(50)
 
-
     ####################################################################
     # DONE: 5. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
