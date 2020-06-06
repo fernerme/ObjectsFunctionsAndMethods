@@ -10,7 +10,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   RUN this program.  Then answer the following,
 #     GETTING HELP AS NEED! (Ask questions!!!)
 #
@@ -53,7 +53,12 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #            The RoseWindow RENDER method basically draws all of the shapes that have been attached to the RoseWindow.
 #
 #     g. When is a RoseWindow close_on_mouse_click method call necessary?  Why?
-#            A RoseWindow close_on_mouse_click method call is necessary when
+#            A RoseWindow close_on_mouse_click method call is necessary when you want to have a single window open for
+#            more than a second. If you open two windows in succession and only the second one uses the
+#            close_on_mouse_click method, then both windows will remain open until the second window is clicked out of.
+#            If you open two windows and both use the close_on_mouse_click method, the second window will only open once
+#            the first window is clicked on (and therefore closed). If you try to open one window without the
+#            close_on_mouse_click method, it will close immediately after opening.
 #
 #   ASK QUESTIONS ** NOW ** if you do not understand how the
 #     RoseGraphics graphics system works.
