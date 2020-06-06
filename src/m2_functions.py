@@ -34,6 +34,8 @@ def main():
     window = rg.TurtleWindow()
 
     turtle1()
+    turtle4()
+    turtle5()
     turtle3()
     turtle2()
     turtle2()
@@ -103,6 +105,50 @@ def turtle3():
     maja.end_fill()
 
 
+def turtle4():
+    """
+    Constructs a default SimpleTurtle.
+    Gives that SimpleTurtle a blue violet pen that's 10 pixels wide
+    and has it create an regular triangle.
+    """
+    sara = rg.SimpleTurtle()
+    sara.pen = rg.Pen('blue violet', 10)
+    sara.left(60)
+    for k in range(3):
+        sara.forward(70)
+        sara.right(120)
+
+
+def turtle5():
+    """
+    Constructs two default SimpleTurtles.
+    One SimpleTurtle is given a red pen that is 2 pixels wide.
+    The other SimpleTurtle is given a blue pen that is 2 pixels wide.
+    One SimpleTurtle is moved to a point 100 pixels down from starting position.
+    Second SimpleTurtle is moved to a point 30 pixels down from starting position.
+    Both turtles create stars.
+    """
+    belle = rg.SimpleTurtle()
+    ariel = rg.SimpleTurtle()
+    belle.pen = rg.Pen('red', 2)
+    ariel.pen = rg.Pen('blue', 2)
+    belle.pen_up()
+    belle.right(90)
+    belle.forward(100)
+    belle.pen_down()
+    ariel.pen_up()
+    ariel.right(90)
+    ariel.forward(30)
+    ariel.pen_down()
+    belle.left(162)
+    for k in range(5):
+        belle.forward(70)
+        belle.left(144)
+    ariel.right(18)
+    for k in range(5):
+        ariel.forward(70)
+        ariel.left(144)
+
 ########################################################################
 #
 # DONE: 2.
@@ -142,7 +188,7 @@ def turtle3():
 #The code in turtle3 runs after turtle1 runs, as that is when it is called in main.
 ########################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Define another function,
 #   immediately below the end of the definition of   turtle3   above.
 #   Name your new function   turtle4.
@@ -172,7 +218,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Add a line to   main   that CALLS your new function immediately
 #   AFTER  main  calls turtle1.  So:
 #     -- the SimpleTurtle from turtle1 should move,
@@ -188,7 +234,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   The previous two TODOs IMPLEMENTED a function (TO DO 3)
 #   and TESTED that function (TO DO 4).
 #
@@ -227,4 +273,6 @@ def turtle3():
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
+
+
 main()
