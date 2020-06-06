@@ -3,12 +3,12 @@ Practice DEFINING and CALLING
      FUNCTIONS
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Melina Ferner
 """
 
 ########################################################################
 #
-# TODO: 1. PUT YOUR NAME IN THE ABOVE LINE and...
+# DONE: 1. PUT YOUR NAME IN THE ABOVE LINE and...
 #
 #   Allow this file to use the rosegraphics.py file by marking the src
 #   directory as a "Sources Root".  Do that by right clicking on the src folder,
@@ -105,7 +105,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   READ the code above.  Be sure you understand:
 #     -- How many functions are defined above?
 #           (Answer: 4)
@@ -134,7 +134,12 @@ def turtle3():
 #   to all of the above questions, change the above TO DO to DONE.
 #
 ########################################################################
-
+#I'm not sure if I'm supposed to answer the second set of questions above, but I'm going to!
+#The code in main runs first, as it is the first function called (and the only function which is called outside of
+    #another function).
+#The code in turtle1 runs after the window to be drawn in is created, as that is when it is called in main.
+#The code in turtle2 runs two times after turtle3 runs, as that is when it is called in main.
+#The code in turtle3 runs after turtle1 runs, as that is when it is called in main.
 ########################################################################
 #
 # TODO: 3.
